@@ -1,0 +1,44 @@
+body {
+   display: flex;
+   justify-content: center; 
+}
+.page {
+    width: ;
+    max-width: 50%;
+    
+}
+nav { 
+    text-align: center;
+}
+h1, h2 {
+    text-align: center;
+}
+.sectionTwo { 
+    display: flex;
+    width: fit-content;
+
+
+}
+.profileImage {
+    height: 350px;
+    width: 400px;
+    max-width: auto;
+    max-height: auto;
+    margin-top: 20px;
+    margin-right: 30px;
+    border-radius: 10px;
+}
+.sectionTwodiv {
+    
+}
+.secTwopara {
+    background-color: #e7d0b3;
+    padding: 10px 25px;
+    border-radius: 10px;
+    width: 750px;
+
+}
+.secThreepara p {
+
+
+}
