@@ -1,6 +1,10 @@
+
 body {
    display: flex;
-   justify-content: center; 
+   justify-content: center;
+   background-color: rgb(108, 30, 30); 
+   font-family: 'Kaushan Script', cursive;
+
 }
 .page {
     width: ;
@@ -10,12 +14,14 @@ body {
 nav { 
     text-align: center;
 }
+
 h1, h2 {
     text-align: center;
+    font-size: 30px;
 }
 .sectionTwo { 
     display: flex;
-    width: fit-content;
+
 
 
 }
@@ -38,7 +44,25 @@ h1, h2 {
     width: 750px;
 
 }
+.secTwoimages {
+    display: inline-block;
+    position: relative;
+
+    right: 12%;
+    /* How to make the width of a container bigger*/
+}
+ul li {
+    list-style-type: none;
+    display: inline-flex;
+    padding: 5px;
+}
+.img-1, .img-2, .img-3,
+.img-4, .img-5, .img-6 {
+    height: 150px;
+    width: 170px;
+    border-radius: 20px;
+}
 .secThreepara p {
 
 
-}
+} 
