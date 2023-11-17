@@ -1,96 +1,146 @@
 body {
-    display: flex;
-    justify-content: center;
+
     background-color: black; 
     font-family: 'Kaushan Script', cursive;
  
  }
- 
+ @media (max-width: 680px) {
+    body {
+        display: block;
+    }
+}
  .page {
-     
-     max-width: 75%;
-     
+    max-width: 100%;
  }
- nav { 
-     text-align: center;
+ @media (max-width: 680px) {
+ .sectionOne {
+    width: 75%;
+    margin: 8px;
+    display: inline;
+ }
+}
+ h1 {
+    font-size: 30px;
+    text-align: center;
+    color: beige;
  }
  
- h1, h2 {
-     text-align: center;
-     color: beige;
- }
- h1 {
-     font-size: 45px;
- }
  h2 {
-     font-size: 35px;
+    font-size: 35px;
+    text-align: center;
+    color: beige;
+ }
+ @media (max-width: 680px) {
+    .sectionTwo h2 {
+        font-size: 20px;
+    }
+ }
+  nav { 
+    text-align: center;
  }
  .navLinks {
-     font-size: 20px;
-     color: bisque;
+    padding: 0;
+    margin: 4px;
+    font-size: 20px;
+    color: bisque;
  }
+ .navLinks li {
+    font-size: 14px;
+ }
+ .row {
+    display: flex;
+}
+@media (max-width: 680px) {
+    .row {
+        display: block;
+    }
+}
  .sectionTwo { 
-     display: flex;
+    display: flex;
+    justify-content: center;
     
- 
+}
+@media(max-width:680px) {
+    .sectionTwo {
+        display: block;
+        width: 100%;
+        margin: 0;
  }
+}
+ .sectionTwodiv {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    
+ }
+ 
  .profileImage {
     height: 325px;
     width: 275px;
-    position: relative;
-    top: 150px;
-    left: 20%;
-    margin-top: 5px;
+    margin: auto;
     border-radius: 10px;
-    
-    /*
-     position: relative;
-     top: 20px;
-     height: 350px;
-     width: 400px;
-     max-width: auto;
-     max-height: auto;
-     margin-top: 6%;
-     margin-left: 50px;
-     border-radius: 10px;
-     border: burlywood solid 4px;
-     */
  }
- 
+ @media(max-width: 500px) {
+    .profileImage {
+        height: 250px;
+        width: 225px;
+    }
+ }
  .secTwopara {
-     font-family: 'Playfair Display', serif;
-     font-size: 22px;/* Make the size 20px and make it scrollable (within the container)*/
-     position: relative;
-     top: 45px;
-     left: 22%;
-     background-color: #e7d0b3;
-     padding-left: 20px;
-     padding-top: 10px;
-     padding-bottom: 30px;
-     border-radius: 10px;
-     width: 850px;
-     height: 275px;
-     overflow: scroll;
-     margin-bottom: 30px;
- 
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 12px;
+    height: 120px;
+    
+    margin: auto;
+    background-color: #e7d0b3;
+    border-radius: 10px;
+    overflow: scroll;
+    
  }
- .sectionTwodiv  {
-    position: relative;;
-    left: 25%;
-    width: 60%;
-}
-.sectionTwodiv h2 {
-   text-align: center;
-    width: fit-content;
+ @media(max-width:500px) {
+    .secTwopara {
+        padding: 0;
+        font-size: 12px; 
+        height: 150px;
+        
+    }
+ }
 
+ .secTwopara p {
+    height: 125px;
+    
+    
+ }
+ @media (max-width: 680px) {
+    .secTwopara p {
+    margin: 0 2px 8px;
+    height: 125px;
+    width: 440px;
+    font-size: 12px;
+    text-indent: 15px;
+    }
+}
+.secTwoimages {
+    display: flex;
+    background-color: teal;
+    border-radius: 15px;
+}
+@media (max-width: 680px) {
+    .secTwoimages {
+    display: block;
+       
+    }
+}
+.swiper {
+    width: 600px;
+    height: 300px;
 }
  .secTwoimages ul {
-     margin-top: 2rem;
-     background-color: teal;
-     border-radius: 15px;
-     height: 170px;
-     align-items: center;
+     display: flex;
+     flex-grow: 1;
      justify-content: space-around;
+     padding: 0;
      
  }    
  ul li {
@@ -105,14 +155,36 @@ body {
      border-radius: 20px;
     
  }
- .sectionThree {
-   
+ @media (max-width: 680px) {
+    .img-1, .img-2, .img-3,
+    .img-4, .img-5, .img-6 {
+        height: 100px;
+        width: 90px;
+        border-radius: 20px;
  }
+ }
+
  .articleImage {
      float: left;
      border-radius: 10px;
      padding: 25px;
      height: 200px;
+ }
+ @media (max-width: 680px) {
+    .articleImage {
+        float: none;
+        padding-left: 30px;
+        padding-top: 20px;
+    }
+ }
+@media (max-width: 680px) {
+    .articleImage2 {
+        float: none;
+        padding-left: 30px;
+        padding-top: 20px;
+    }
+}
+
  }
  .articleImage2 {
      height: 200px;
@@ -120,18 +192,46 @@ body {
      padding: 25px;
      
  }
+ secThreepara {
+    width: 50%;
+}
  .secThreepara p {
      font-size: 20px;
      columns: 2;
      color: rgb(188, 188, 130);
      font-family: 'Playfair Display', serif;
  }
- .row {
-     display: flex;
-     justify-content: space-between;
- }
- .secThreepara {
-     width: 48%;
  
- }
- 
+
+
+/*.img-1, .img-2, .img-3,
+.img-4, .img-5, .img-6 {
+    height: 100px;
+    width: 95px;
+    border-radius: 20px;
+}
+.articleImage {
+    float: left;
+    border-radius: 10px;
+    padding: 25px;
+    height: 200px;
+}
+.articleImage2 {
+    height: 200px;
+    float: left;
+    padding: 25px;
+    
+}
+.secTwopara p {
+    height: 125px;
+    font-size: 14px;
+    justify-content: ;
+}
+
+    .secTwopara p { 
+    margin: 0 2px 8px;
+    height: 125px;
+    font-size: 12px;
+    text-indent: 15px;
+    
+}

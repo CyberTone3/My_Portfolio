@@ -1,0 +1,52 @@
+body {
+    background-color: burlywood;
+}
+h1, h2 {
+    text-align: center;
+
+}
+.navLinks {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style-type: none;
+    padding: 0;
+
+}
+
+.sectionTwo {
+    display: flex;
+    
+}
+.sectionTwodiv {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+.profileImage {
+
+    height: 350px;
+    border-radius: 15px;
+   
+
+}
+.secTwopara {
+    
+    width: 975px;
+    display: inline-block;
+    height: 155px;
+    overflow: scroll;
+    border: hsl(11deg 80.39% 28.39%) solid 2px;
+    background-color: antiquewhite;
+    border-radius: 15px;
+    margin-left: 40px;
+}
+    
+
+.sectionTwo h2 {
+   
+    width: 550px;
+    align-self: flex-start;
+    
+}
