@@ -1,5 +1,6 @@
 body {
-
+    width: 75%;
+    margin: auto;
     background-color: black; 
     font-family: 'Kaushan Script', cursive;
  
@@ -26,7 +27,7 @@ body {
  }
  
  h2 {
-    font-size: 35px;
+    font-size: 20px;
     text-align: center;
     color: beige;
  }
@@ -75,9 +76,10 @@ body {
  }
  
  .profileImage {
-    height: 325px;
-    width: 275px;
+    height: 225px;
+    width: 175px;
     margin: auto;
+    margin-top: 15px;
     border-radius: 10px;
  }
  @media(max-width: 500px) {
@@ -91,8 +93,7 @@ body {
     font-family: 'Playfair Display', serif;
     font-size: 12px;
     height: 120px;
-    
-    margin: auto;
+    width: 300px;
     background-color: #e7d0b3;
     border-radius: 10px;
     overflow: scroll;
@@ -101,6 +102,7 @@ body {
  @media(max-width:500px) {
     .secTwopara {
         padding: 0;
+        margin: auto;
         font-size: 12px; 
         height: 150px;
         
@@ -123,8 +125,9 @@ body {
 }
 .secTwoimages {
     display: flex;
-    background-color: teal;
-    border-radius: 15px;
+    padding: 0;
+    position: relative;
+    bottom: 60px;
 }
 @media (max-width: 680px) {
     .secTwoimages {
@@ -135,6 +138,13 @@ body {
 .swiper {
     width: 600px;
     height: 300px;
+    margin-bottom: 80px;
+    bottom: 55px;
+    border-radius: 10px;
+}
+.swiper-slide img {
+    height: 400px;
+    width: inherit;
 }
  .secTwoimages ul {
      display: flex;
@@ -150,9 +160,7 @@ body {
  }
  .img-1, .img-2, .img-3,
  .img-4, .img-5, .img-6 {
-     height: 150px;
-     width: 170px;
-     border-radius: 20px;
+     display: none;
     
  }
  @media (max-width: 680px) {
@@ -185,7 +193,6 @@ body {
     }
 }
 
- }
  .articleImage2 {
      height: 200px;
      float: left;
